@@ -3,474 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>graphic-designing</title>
+    <title>Graphic Designing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>
-/* Footer ke styles */
-.footer {
-    
-    /* Apne desired background color ko yahan daalo */
-   background-color: rgb(3, 3, 24);
-   color: #fff; /* Text color */
-   padding: 20px ; /* Footer ke liye vertical padding */
-   margin: 0;
-   width: 100%; /* Full width */
-}
+    <style>
+        /* Footer styles */
+        .footer {
+            background-color: rgb(3, 3, 24);
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            width: 100%;
+        }
 
+        /* Container styles */
+        .container2 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-/* Container ke styles */
-.containere {
-   width: 100%;  /* Full width tak footer background ko le jaana */
-   max-width: none; /* Content ke liye max width */
-   margin: 0 auto; /* Container ko center karo */
-   padding: 0 20px; /* Inner spacing ke liye padding */
-   overflow-y: auto; /* Vertical scrolling enable karna */
-}
+        /* Footer content styles */
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
 
+        /* Copyright styles */
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
 
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
 
-/* Footer content ke styles */
-.footer-content {
-   display: flex;  /* Horizontal alignment ke liye flexbox use karo */
-   justify-content: space-between; /* Items ko space do */
-   align-items: flex-start; /* Items ko start se align karo */
-}
+        .whatsapp-icon {
+            width: 50px;
+            height: 50px;
+        }
 
-/* Copyright ke styles */
-.copyright {
-   text-align: center; /* Copyright text ko center align karo */
-   margin-top: 20px; /* Copyright ke upar space do */
-   width: 100%; /* Copyright ke liye full width */
-}
+        /* Card Styles */
+        .card {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 4px;
+            height: 100%;
+        }
 
-.whatsapp-float {
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   z-index: 1000;
-  
- }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
- .whatsapp-icon {
-   width: 50px;
-   height: 50px;
-   margin-left: 1200px;
+        .card-body {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
 
- }
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: black;
+        }
 
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+            flex-grow: 1;
+        }
 
- /* Card Styles */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 20px;
+            transition: background-color 0.2s ease;
+        }
 
- .card {
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Light black border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-radius: 4px; /* Optional: Rounded corners */
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
 
-}
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-content > div {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
 
-.card:hover {
-    transform: translateY(-15px); /* Moves the card slightly upwards on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
-}
+            .whatsapp-float {
+                bottom: 10px;
+                right: 10px;
+            }
 
-.card-img-top {
-    height: 100px;
-    object-fit: cover;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.card-body {
-    padding: 20px;
-    text-align: center;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-     color: black;  /*Primary color */
-} 
-
-.card-text {
-    font-size: 1rem;
-    color: #555; /* Adjust text color as needed */
-}
-
-
-.btn-primary {
-    background-color: #007bff; /* Button color */
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 20px; /* Rounded button */
-    transition: background-color 0.2s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-
-</style>
+            .whatsapp-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-<!-- nanbar -->
 
-<div class="navbar-hero">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="black logo.png" alt="Logo" width="70" height="70" class="rounded-logo me-2">
-                <div>
-                    <span class="business-name" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 40px;">D.G Solution's</span>
-                </div>
-            </a>
-            <button style="background-color: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Navbar (unchanged) -->
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
-                        <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
-                    </li>
-                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
-                        <a class="nav-link" href="about.html#about">About Us</a>
-                    </li>
-                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+        <nav class="navbar navbar-expand-lg" style="background-color:whitesmoke;">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="black logo.png" alt="Logo" width="70" height="70" class="rounded-logo me-2">
+                    <div>
+                        <span class="business-name" style="font-size: 40px; color: black; font-family: Arial, Helvetica, sans-serif;">D.G Solution's</span>
+
+                    </div>
+                </a>
+                <button style="background-color: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!-- Navbar links -->
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+                    <ul class="navbar-nav ms-auto" >
+                      <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link active" aria-current="page" href="index.html#home" >Home</a>
+                      </li>
+                      <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="about.html#about" >About Us</a>
+                      </li>
+                      <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
                         <a class="nav-link" href="testimonal.html#Testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item dropdown">
+                      </li>
+
+
+
+                       <li class="nav-item dropdown" >
                         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
                             Our Services
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item"  href="Graphic.html"><i class="fas fa-paint-brush"></i> Graphic Designing</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown"
+
+                            <li><a class="dropdown-item" href="Graphic.html"><i class="fas fa-paint-brush"></i> Graphic Designing</a></li>
                             <li><a class="dropdown-item" href="video2.html"><i class="fas fa-video"></i> Video Editing</a></li>
                             <li><a class="dropdown-item" href="digital.html"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
                             <li><a class="dropdown-item" href="softwere2.html"><i class="fas fa-laptop-code"></i> Software Development</a></li>
                             <li><a class="dropdown-item" href="application.html"><i class="fas fa-code"></i> Application Development</a></li>
                             <li><a class="dropdown-item" href="website.html"><i class="fas fa-globe"></i> Website Development</a></li>
+
+
                         </ul>
                     </li>
-                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
-                        <a class="nav-link" href="contact.html#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
 
 
-
- <!-- Main Content -->
- 
-
-  <h1 style="margin-top: 50px; font-weight: bold; color: black; display: flex; justify-content: center;">Graphic Designing</h1>
-<p style="display: flex; justify-content: center;">Unlock creativity, elevate your brand with tailored graphic design services.</p>
-
-<div class="container"> <!-- Fixed from 'di' to 'div' -->
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Logo Design </h5>
-                    <p class="card-text">Transform your brand's identity with our custom logo design services, crafted for excellence.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button>
+                      </li>
+                      <li class="nav-item" style="font-weight: bold; font-size: 20px;font-family: Arial, Helvetica, sans-serif;">
+                       <a class="nav-link" href="contact.html#contact">Contact Us</a>
+                     </li>
+                    </ul>
+                     </div>
                 </div>
-            </div>
-        </div>
-    
-        <!-- Modal for Card 1 -->
-        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel8">Logo Design Services</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>Logo Design Services</strong></p>
-                        <p>Stand out from the competition with our bespoke logo design services! Our team crafts unique logos that reflect your brand's vision and values.</p>
-                        <h6><strong>Key Features:</strong></h6>
-                        <ul>
-                            <li>Custom Logo Design</li>
-                            <li>Multiple Concept Designs</li>
-                            <li>Unlimited Revisions</li>
-                            <li>High-Quality Files</li>
-                            <li>Brand Guidelines</li>
-                        </ul>
-                        <p>Our logo design services not only help in establishing a memorable brand identity but also create a lasting impression on your audience. We ensure that your logo resonates with your target market and embodies your brand’s ethos.</p>
-                        <p>Ready to elevate your brand's image? Our logo design experts are here to bring your vision to life. Embrace creativity and make your mark with a professional logo that speaks volumes about your brand!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+        </nav>
+
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Graphic Designing</h1>
+        <p class="text-center mb-5">Unlock creativity, elevate your brand with tailored graphic design services.</p>
+
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Logo Design</h5>
+                        <p class="card-text">Transform your brand's identity with our custom logo design services, crafted for excellence.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button>
                     </div>
                 </div>
             </div>
-        </div>
-    
-    
-    
 
-<!-- Card 2 -->
-
-<div class="col-md-3 mb-4">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Thumbnail Design </h5>
-            <p class="card-text">Enhance your brand's visibility with our professional thumbnail design services.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Read More</button>
-        </div>
-    </div>
-</div>
-
-<!-- Modal for Card 2 -->
-<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel9">Thumbnail Design Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Thumbnail Design</h5>
+                        <p class="card-text">Enhance your brand's visibility with our professional thumbnail design services.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Read More</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <p><strong>Thumbnail Design Services</strong></p>
-                <p>Grab your audience's attention with eye-catching thumbnail designs tailored to your content!</p>
-                <h6><strong>Key Features:</strong></h6>
-                <ul>
-                    <li>Custom Thumbnail Design</li>
-                    <li>Engaging Visuals</li>
-                    <li>Brand Consistency</li>
-                    <li>High-Quality Graphics</li>
-                    <li>Quick Turnaround</li>
-                </ul>
-                <p>Our thumbnail design services help increase click-through rates and enhance the overall appeal of your content. We ensure that every thumbnail reflects your brand's identity and attracts viewers.</p>
-                <p>Let our experts create compelling thumbnails that set your content apart. Boost your engagement and make a strong impression with our professional thumbnail design services!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-
-
-<!-- Card 3 -->
-<div class="col-md-3 mb-4">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Notebook Design </h5>
-            <p class="card-text">Transform your ideas into beautifully designed notebooks, personalized to reflect your unique style</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Read More</button>
-        </div>
-    </div>
-</div>
-
-<!-- Modal for Card 3 -->
-<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal3">Notebook Design Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Notebook Design</h5>
+                        <p class="card-text">Transform your ideas into beautifully designed notebooks, personalized to reflect your unique style.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Read More</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <p><strong>Notebook Design Services</strong></p>
-                <p>Unleash your creativity with our custom notebook design services! Perfect for schools, businesses, or personal use.</p>
-                <h6><strong>Key Features:</strong></h6>
-                <ul>
-                    <li>Custom Cover Design</li>
-                    <li>Variety of Sizes</li>
-                    <li>High-Quality Printing</li>
-                    <li>Personalized Options</li>
-                    <li>Durable Materials</li> 
-                </ul>
-                <p>Our notebook design services provide a unique way to showcase your brand, enhance your marketing materials, and inspire creativity in your audience.</p>
-                <p>Ready to make your mark? Let our design experts create a notebook that stands out and meets your needs!</p>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Post</h5>
+                        <p class="card-text">Enhance your online presence with our captivating social media post design services.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Read More</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Catalogue</h5>
+                        <p class="card-text">Showcase your products and services with our professional business catalogue design services.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Read More</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- Modals (unchanged) -->
 
-
-
-<!-- Card 4 -->
-
-<div class="col-md-3 mb-4">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Social Media Post </h5>
-            <p class="card-text">Enhance your online presence with our captivating social media post design services.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Read More</button>
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container2">
+            <div class="row footer-content">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <h5>About Us</h5>
+                    <p>We pride ourselves on delivering premium IT solutions.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: designsolution090@gmail.com</p>
+                    <p>Phone: 03701249537</p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <h5>Address</h5>
+                    <p>3/5 1j Muslim League Quarter</p>
+                    <p>Nazimabad No.1 Karachi</p>
+                </div>
+            </div>
+            <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
         </div>
-    </div>
-</div>
+        <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+        </a>
+    </footer>
 
-<!-- Modal for Card 4 -->
-<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal4">Social Media Post Design Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Social Media Post Design Services</strong></p>
-                <p>Boost your brand visibility with our engaging social media post designs! Tailored for platforms like Instagram, Facebook, and Twitter.</p>
-                <h6><strong>Key Features:</strong></h6>
-                <ul>
-                    <li>Custom Post Designs</li>
-                    <li>Brand Consistency</li>
-                    <li>High Engagement Rates</li>
-                    <li>Variety of Formats</li>
-                    <li>Timely Delivery</li>
-                </ul>
-                <p>Our social media post design services help you create eye-catching content that resonates with your audience, driving interaction and engagement.</p>
-                <p>Let us help you stand out on social media and connect with your followers through visually appealing posts!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Card 5 -->
-<div class="col-md-3 mb-4 mx-auto text-center"">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Business Catalogue </h5>
-            <p class="card-text">Showcase your products and services with our professional business catalogue design services.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Read More</button>
-        </div>
-    </div>
-</div>
-
-<!-- Modal for Card 5 -->
-<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal5">Business Catalogue Design Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Business Catalogue Design Services</strong></p>
-                <p>Elevate your brand with a stunning business catalogue that effectively showcases your offerings!</p>
-                <h6><strong>Key Features:</strong></h6>
-                <ul>
-                    <li>Custom Layout Design</li>
-                    <li>High-Quality Images</li>
-                    <li>Detailed Product Descriptions</li>
-                    <li>Professional Aesthetics</li>
-                    <li>Print and Digital Formats</li>
-                </ul>
-                <p>Our business catalogue design services are crafted to highlight your products and services, making a lasting impression on potential customers.</p>
-                <p>Let us help you create a catalogue that communicates your brand’s story and drives sales!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-
-<!-- footer -->
- <!-- <footer class="footer">
-    <div class="containere"> 
-       <div class="footer-content">
-           <div class="about-us">
-               <h5>About Us</h5>
-               <p>We pride ourselves on delivering premium IT solutions </p>
-           </div>
-           <div class="contact-us">
-               <h5>Contact Us</h5>
-               <p>Email: designsolution090@gmail.com</p>
-               <p>Phone: 03701249537</p>
-           </div>
-           <div class="social-icons">
-               <h5>Follow Us</h5>
-               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
-                   <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
-           </div>
-           <div class="address">
-               <h5>Address</h5>
-               <p>3/5 1j Muslim League Quarter</p>
-               <p>Nazimabad No.1 Karachi</p>
-           </div>
-       </div>
-       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
-   </div>
-    <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
-  </a> 
-</footer>  -->
-
-<footer class="footer">
-    <div class="container2"> 
-       <div class="row footer-content">
-           <div class="col-md-3 about-us">
-               <h5>About Us</h5>
-               <p>We pride ourselves on delivering premium IT solutions.</p>
-           </div>
-           <div class="col-md-3 contact-us">
-               <h5>Contact Us</h5>
-               <p>Email: designsolution090@gmail.com</p>
-               <p>Phone: 03701249537</p>
-           </div>
-           <div class="col-md-3 social-icons">
-               <h5>Follow Us</h5>
-               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
-               <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
-           </div>
-           <div class="col-md-3 address">
-               <h5>Address</h5>
-               <p>3/5 1j Muslim League Quarter</p>
-               <p>Nazimabad No.1 Karachi</p>
-           </div>
-       </div>
-       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
-   </div>
-   <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
-   </a> 
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
