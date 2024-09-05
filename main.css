@@ -30,7 +30,7 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     /* overflow: hidden; Ensure no scrollbars */
-    
+
 }
 
 
@@ -38,7 +38,7 @@ body {
     min-height: 100vh;
     width: 100%;
      /* background-color: rgba(0, 0, 0, 0.5); */
-} 
+}
 
 /* Navbar Styles */
 .navbar {
@@ -56,7 +56,7 @@ body {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
-  
+
 }
 
 .navbar-nav {
@@ -70,7 +70,7 @@ body {
     position: relative;
     padding: 0.5rem 1rem;
     font-weight: bold;
-    
+
 }
 
 /* .nav-link::after {
@@ -109,7 +109,7 @@ body {
 
 .hero-text p {
     font-size: 2.1rem;
-     color: white; 
+     color: white;
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -629,36 +629,36 @@ p {
   } */
 
   .containere2 {
-    width: 100%;  
-    max-width: none; 
-    margin: 0 auto; 
-    padding: 0 20px; 
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 20px;
     padding-bottom: 60px; /* Footer ki height se space */
 }
 
 .footer {
     background-color: rgb(3, 3, 24);
-    color: #fff; 
-    padding: 20px;  
+    color: #fff;
+    padding: 20px;
     margin: 0;
-    width: 100%; 
+    width: 100%;
     /* position: fixed;  */
     /* Fixed position */
     bottom: 0; /* Zameen ke saath chipkana */
-    left: 0; 
-    right: 0; 
+    left: 0;
+    right: 0;
 }
 
 .footer-content {
-    display: flex;  
-    justify-content: space-between; 
-    align-items: flex-start; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .copyright {
-    text-align: center; 
-    margin-top: 20px; 
-    width: 100%; 
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
 }
 
 
@@ -793,16 +793,16 @@ margin-left: 1200px;
   }
 
   .footer {
-    
+
     padding: 20px 0; /* Padding upar aur neeche */
   }
-  
+
   .footer-content {
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Items ke beech space dene ke liye */
     align-items: flex-start; /* Items ko vertically top par align karne ke liye */
   }
-  
+
   .footer-content > div {
     flex: 1; /* Har section ko equal width dene ke liye */
     padding: 10px; /* Uniform padding for all sections */
@@ -810,11 +810,9 @@ margin-left: 1200px;
     min-height: 150px; /* Minimum height to ensure uniformity */
     margin: 0; /* Margin ko remove karen */
   }
-  
+
   /* Icon styling (optional) */
   .icon-link {
     margin-right: 10px; /* Icons ke beech space */
     font-size: 20px; /* Icon size */
   }
-  
-  
