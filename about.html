@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+     <!-- <link rel="stylesheet" href="about.css"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (Optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+
+
+
+ html, body {
+    height: 100%;
+    margin: 0; /* Default margin hata dein */
+    padding: 0; /* Default padding hata dein */
+    overflow: auto; /* Scrolling allow karna */
+}
+
+.whatsapp-float {
+    bottom: 20px; /* Footer ke 20px upar */
+    right: 20px; /* Right corner mein */
+    z-index: 1000;
+    position: absolute; /* Ya `absolute` agar footer ke andar rakhna hai */
+}
+
+.whatsapp-icon {
+    width: 50px; /* Icon size ko adjust karein */
+    height: 50px; /* Icon size ko adjust karein */
+    /* margin-left: 1200px; */ /* Yeh line hata dein */
+    cursor: pointer; /* Pointer cursor jab hover karein */
+}
+
+
+
+ 
+.submit-btn {
+    background-color: #25D366; /* WhatsApp green color */
+    color: white;
+}
+
+
+ .about-us {
+    padding: 60px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} 
+
+.about-us {
+    background-color: #f0f8ff; /* Light background color */
+     padding: 50px 0; /* Vertical padding for the section */
+    text-align: center; /* Center align the content */
+    position: relative; /* Positioning for the shadow effect */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); /* Black shadow for About Us section */
+    border-radius: 10px; /* Adds rounding to the corners */
+    padding: 20px; /* Optional: adds space inside the section */
+    
+}
+
+ .content-container p {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+} 
+
+.learn-more-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+ .learn-more-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}  
+
+
+/* Background color div styles */
+.full-bg {
+    background-image: url(aboutbg.jpg);
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
+}
+
+
+.about-us .content-container {
+    background-image: url(aboutinner1.jpg); /* Card's background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the card */
+    color: white; /* Ensures text is readable on the blue background */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 55, 0.9); /* Intense blue shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+
+.about-us .content-container:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 0 20px 7px rgba(0, 0, 255, 1); /* Intensifies shadow on hover */
+}
+
+
+.full-bg {
+    position: relative; /* Positioning for the shadow effect */
+    padding: 20px; /* Optional: adds space inside the section */
+    flex: 1;
+}
+
+
+.full-bg h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em; /* Font size for the heading */
+    text-align: center; /* Center align the text */
+    color: white; /* Heading color */
+    background-color: transparent; /* Transparent background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 25px 8px rgba(7, 7, 199, 0.9); /* Darker shadow effect */
+    animation: move 2s infinite; /* Continuous movement animation */
+}
+
+/* Continuous right-side movement animation */
+@keyframes move {
+    0% {
+        transform: translateX(0); /* Original position */
+    }
+    25% {
+        transform: translateX(5px); /* Move slightly to the right */
+    }
+    50% {
+        transform: translateX(0); /* Back to original */
+    }
+    75% {
+        transform: translateX(-5px); /* Move slightly to the left */
+    }
+    100% {
+        transform: translateX(0); /* Back to original */
+    }
+}
+
+
+    .full-bg h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+        padding: 1px; /* Less padding */
+    }
+
+    .content-container {
+        padding: 5px; /* Less padding for content */
+        
+    }
+
+    .learn-more-button {
+        padding: 10px 20px; /* Smaller button for mobile */
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    .content-container h1 {
+        font-size: 1.5em; /* Smaller heading for content */
+    }
+
+    .content-container p {
+        font-size: 0.9em; /* Smaller paragraph text */
+    }
+
+    /* foter */
+
+    .containere2 {
+            width: 100%;  
+            max-width: none; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            padding-bottom: 60px; /* Footer ki height se space */
+        }
+
+        .footer {
+            background-color: rgb(3, 3, 24);
+            color: #fff; 
+            padding: 20px;  
+            margin: 0;
+            width: 100%; 
+             /* position: fixed;  */
+             /* Fixed position */
+            bottom: 0; /* Zameen ke saath chipkana */
+            left: 0; 
+            right: 0; 
+        }
+
+        .footer-content {
+            display: flex;  
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+
+        .copyright {
+            text-align: center; 
+            margin-top: 20px; 
+            width: 100%; 
+        }
+
+
+
+.whatsapp-float {
+   /* position: fixed; */
+   bottom: 20px;
+   right: 20px;
+   z-index: 1000;
+  
+ }
+
+ .whatsapp-icon {
+   width: 50px;
+   height: 50px;
+   margin-left: 1200px;
+
+ }
+
+</style>
+
+</head>
+<body>
+
+<!-- nanbar -->
+
+<div class="navbar-hero">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="black logo.png" alt="Logo" width="70" height="70" class="rounded-logo me-2">
+                <div>
+                    <span class="business-name" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 40px;">D.G Solution's</span>
+                </div>
+            </a>
+            <button style="background-color: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; overflow: auto;">
+                        <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="about.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="testimonal.html#Testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Graphic.html" id="graphic-designing"><i class="fas fa-paint-brush"></i> Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="video2.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                            <li><a class="dropdown-item" href="digital.html"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="softwere2.html"><i class="fas fa-laptop-code"></i> Software Development</a></li>
+                            <li><a class="dropdown-item" href="application.html"><i class="fas fa-code"></i> Application Development</a></li>
+                            <li><a class="dropdown-item" href="website.html"><i class="fas fa-globe"></i> Website Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="contact.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- about us -->
+    
+    <div class="full-bg">
+        <h1>Welcome to Our Page</h1>
+    
+    
+<div class="about-us">
+    <div class="content-container"> 
+        <h1>About Us</h1>
+        <p>D•G-Solutions is a Graphic Design and Digital Marketing company dedicated to helping small businesses, organizations, and large enterprises overcome their challenges. We offer a wide range of services, including Graphic Design, Social Media Marketing, IT Software Solutions, and Website Development.</p>
+        <p>Our team comprises experienced professionals who excel in their respective fields, ensuring that we deliver nothing but the best to our clients.</p>
+        <button class="learn-more-button">Learn More</button>
+        
+        
+<!-- Additional information section -->
+<div id="moreInfo" style="display: none;">
+    <p>At D•G-Solutions, we believe in harnessing creativity and technology to drive success for our clients. Our comprehensive range of services includes:</p>
+    <ul>
+        <li><strong>Graphic Design:</strong> We create visually stunning designs that communicate your brand message effectively.</li>
+        <li><strong>Social Media Marketing:</strong> Our strategies boost your online presence and engage your target audience on platforms like Facebook, Instagram, and Twitter.</li>
+        <li><strong>IT Software Solutions:</strong> We provide tailored software solutions that streamline your operations and enhance productivity.</li>
+        <li><strong>Website Development:</strong> Our web development team builds responsive and user-friendly websites that reflect your brand identity.</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container2"> 
+       <div class="row footer-content">
+           <div class="col-md-3 about-us1">
+                <h5>About Us</h5> 
+               <p>We pride ourselves on delivering premium IT solutions.</p>
+           </div>
+           <div class="col-md-3 contact-us">
+               <h5>Contact Us</h5>
+               <p>Email: designsolution090@gmail.com</p>
+               <p>Phone: 03701249537</p>
+           </div>
+           <div class="col-md-3 social-icons">
+               <h5>Follow Us</h5>
+               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
+               <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
+           </div>
+           <div class="col-md-3 address">
+               <h5>Address</h5>
+               <p>3/5 1j Muslim League Quarter</p>
+               <p>Nazimabad No.1 Karachi</p>
+           </div>
+       </div>
+       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
+   </div>
+   <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+   </a> 
+</footer>
+
+<!-- Footer Section End -->
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Your content here -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.learn-more-button').addEventListener('click', function() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        });
+    });</script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+/* Footer ke styles */
+html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .containere2 {
+            width: 100%;  
+            max-width: none; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            padding-bottom: 60px; /* Footer ki height se space */
+            overflow-y: auto; /* Vertical scrolling enable karna */
+        }
+
+        .footer {
+            background-color: rgb(3, 3, 24);
+            color: #fff; 
+            padding: 20px;  
+            margin: 0;
+            width: 100%; 
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Zameen ke saath chipkana */
+            left: 0; 
+            right: 0; 
+        }
+
+        .footer-content {
+            display: flex;  
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+
+        .copyright {
+            text-align: center; 
+            margin-top: 20px; 
+            width: 100%; 
+        }
+
+
+
+.whatsapp-float {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 1000;
+  
+ }
+
+ .whatsapp-icon {
+   width: 50px;
+   height: 50px;
+   margin-left: 1200px;
+
+ }
+
+
+ /* Card Styles */
+
+ .card {
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light black border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 4px; /* Optional: Rounded corners */
+
+}
+
+.card:hover {
+    transform: translateY(-15px); /* Moves the card slightly upwards on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.card-img-top {
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+     color: black;  /*Primary color */
+} 
+
+.card-text {
+    font-size: 1rem;
+    color: #555; /* Adjust text color as needed */
+}
+
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+</style>
+</head>
+<body>
+    
+<!-- nanbar -->
+
+<div class="navbar-hero">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="black logo.png" alt="Logo" width="70" height="70" class="rounded-logo me-2">
+                <div>
+                    <span class="business-name" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 40px;">D.G Solution's</span>
+                </div>
+            </a>
+            <button style="background-color: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="about.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="testimonal.html#Testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Graphic.html" id="graphic-designing"><i class="fas fa-paint-brush"></i> Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="video2.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                            <li><a class="dropdown-item" href="digital.html"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="softwere2.html"><i class="fas fa-laptop-code"></i> Software Development</a></li>
+                            <li><a class="dropdown-item" href="application.html"><i class="fas fa-code"></i> Application Development</a></li>
+                            <li><a class="dropdown-item" href="website.html"><i class="fas fa-globe"></i> Website Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="contact.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+ <!-- Main Content -->
+ 
+
+  <h1 style="margin-top: 50px; font-weight: bold; color: black; display: flex; justify-content: center;">Video Editing</h1>
+<p style="display: flex; justify-content: center;">Transform your vision into stunning visuals with professional video editing
+
+</p>
+
+<div class="container"> <!-- Fixed from 'di' to 'div' -->
+    <di class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-4 d-flex justify-content-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"> Video Editing  </h5>
+                    <p class="card-text">Our Video Editing Service where we specialize in transforming raw footage into compelling visual stories. </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Card 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel8">Video Editing </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Welcome to our Video Editing service, where we specialize in transforming raw footage into compelling visual stories, employing creative expertise to enhance your content.</p>
+<h6><strong>Top Categories</strong></h6>
+<ul>
+    <li>Commercial Ads</li>
+    <li>Product Demonstration Videos</li>
+    <li>Social Media Videos</li>
+</ul>
+<p>Elevate your content with engaging video edits that captivate and retain your audience. We maintain a consistent visual style, reinforcing your brand identity. Thoughtful edits foster longer engagement, and our professional polish ensures meticulous attention to detail. Our customized edits for different platforms maximize impact, extending your reach.</p>
+<p>Choose us for a compelling visual experience that leaves a lasting impression. Let your story shine with our expertise in Video Editing.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+</div>
+</div>
+
+<!-- footer -->
+ <!-- <footer class="footer">
+    <div class="containere"> 
+       <div class="footer-content">
+           <div class="about-us">
+               <h5>About Us</h5>
+               <p>We pride ourselves on delivering premium IT solutions </p>
+           </div>
+           <div class="contact-us">
+               <h5>Contact Us</h5>
+               <p>Email: designsolution090@gmail.com</p>
+               <p>Phone: 03701249537</p>
+           </div>
+           <div class="social-icons">
+               <h5>Follow Us</h5>
+               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
+                   <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
+           </div>
+           <div class="address">
+               <h5>Address</h5>
+               <p>3/5 1j Muslim League Quarter</p>
+               <p>Nazimabad No.1 Karachi</p>
+           </div>
+       </div>
+       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
+   </div>
+    <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+  </a> 
+</footer> 
+ -->
+
+
+ <footer class="footer">
+    <div class="container2"> 
+       <div class="row footer-content">
+           <div class="col-md-3 about-us">
+               <h5>About Us</h5>
+               <p>We pride ourselves on delivering premium IT solutions.</p>
+           </div>
+           <div class="col-md-3 contact-us">
+               <h5>Contact Us</h5>
+               <p>Email: designsolution090@gmail.com</p>
+               <p>Phone: 03701249537</p>
+           </div>
+           <div class="col-md-3 social-icons">
+               <h5>Follow Us</h5>
+               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
+               <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
+           </div>
+           <div class="col-md-3 address">
+               <h5>Address</h5>
+               <p>3/5 1j Muslim League Quarter</p>
+               <p>Nazimabad No.1 Karachi</p>
+           </div>
+       </div>
+       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
+   </div>
+   <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+   </a> 
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

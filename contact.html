@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- css custum link -->
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (Optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+* {
+    box-sizing: border-box; /* Border aur padding ko dimensions mein include karein */
+}
+
+
+
+
+
+.containere2 {
+            width: 100%;  
+            max-width: none; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            padding-bottom: 60px; /* Footer ki height se space */
+        }
+
+        .footer {
+            background-color: rgb(3, 3, 24);
+            color: #fff; 
+            padding: 20px;  
+            margin: 0;
+            width: 100%; 
+            /* position: fixed; */
+             /* Fixed position */
+            bottom: 0; /* Zameen ke saath chipkana */
+            left: 0; 
+            right: 0; 
+        }
+
+        .footer-content {
+            display: flex;  
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+
+        .copyright {
+            text-align: center; 
+            margin-top: 20px; 
+            width: 100%; 
+        }
+
+
+
+.whatsapp-float {
+   /* position: fixed; */
+   bottom: 20px;
+   right: 20px;
+   z-index: 1000;
+  
+ }
+
+ .whatsapp-icon {
+   width: 50px;
+   height: 50px;
+   margin-left: 1400px;
+
+ }
+
+
+
+
+ .contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+}
+
+.submit-btn {
+    background-color: #25D366; /* WhatsApp green color */
+    color: white;
+}
+
+.contact-form {
+    background-color: #0099FF; /* Background color for the form */
+    padding: 30px; /* Adds padding around the form */
+    border-radius: 10px; /* Rounds the corners of the form */
+    color: white; /* Ensures the text is readable on the blue background */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.9); /* Blue shadow around the entire form */
+}
+
+.contact-form .form-control, .contact-form .form-select, .contact-form textarea {
+     
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7); /* Black shadow for input fields, select box, and textarea */
+    border: 2px solid rgba(0, 0, 0, 0.7); /* Black border around f
+    border-radius: 5px; /* Rounds the corners of the form fields */
+    padding: 10px; /* Adds padding inside the form fields */
+    margin-bottom: 15px; /* Adds space between form fields */
+    background-color: #ffffff; /* White background for form fields */
+    color: black; /* Black text inside the form fields */
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out; /* Smooth transition for hover effect */
+    
+}
+
+.contact-form .form-control:focus, .contact-form .form-select:focus, .contact-form textarea:focus {
+    box-shadow: 0 0 15px 3px rgba(0, 0, 255, 1); /* Intensifies the blue shadow on focus */
+    border: 2px solid rgba(0, 0, 255, 1); /* Intensifies the blue border on focus */
+    outline: none; /* Removes the default focus outline */
+}
+
+.contact-form .submit-btn {
+    background-color: #ffffff; /* White background for the submit button */
+    color: #0099FF; /* Blue text color for the submit button */
+    border: 2px solid #0099FF; /* Blue border for the submit button */
+    border-radius: 5px; /* Rounds the corners of the submit button */
+    padding: 10px 20px; /* Adds padding to the submit button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #0099FF; /* Blue background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+
+
+
+
+
+
+    </style>
+    
+</head>
+<body style="background-image: url(contactbg.jpg);">
+    
+<!-- nanbar -->
+
+<div class="navbar-hero">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="black logo.png" alt="Logo" width="70" height="70" class="rounded-logo me-2">
+                <div>
+                    <span class="business-name" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 40px;">D.G Solution's</span>
+                </div>
+            </a>
+            <button style="background-color: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; overflow: auto;">
+                        <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="about.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="testimonal.html#Testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Graphic.html" id="graphic-designing"><i class="fas fa-paint-brush"></i> Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="video2.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                            <li><a class="dropdown-item" href="digital.html"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="softwere2.html"><i class="fas fa-laptop-code"></i> Software Development</a></li>
+                            <li><a class="dropdown-item" href="application.html"><i class="fas fa-code"></i> Application Development</a></li>
+                            <li><a class="dropdown-item" href="website.html"><i class="fas fa-globe"></i> Website Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="contact.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- form -->
+
+      <div style="margin-top: 50px;">
+        <div class="contact-form" id="contact" style="background-image: url(cardsbg.jpg); width: 400px; margin-left: auto; margin-right: auto; padding: 20px;">
+            <h2 style="font-weight: bold; align-items: center;">Contact Us</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label" style="font-weight: bold;">Name</label>
+                    <input type="text" class="form-control" id="name" required style="height: 30px;"> <!-- Adjusted height -->
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label" style="font-weight: bold;">Phone</label>
+                    <input type="tel" class="form-control" id="phone" required style="height: 30px;"> <!-- Adjusted height -->
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="font-weight: bold;">Email</label>
+                    <input type="email" class="form-control" id="email" required style="height: 30px;"> <!-- Adjusted height -->
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label" style="font-weight: bold;">Message</label>
+                    <textarea class="form-control" id="message" rows="2" style="height: 60px;"></textarea> <!-- Adjusted height -->
+                </div>
+                <button type="submit" class="btn submit-btn" style="font-weight: bold; height: 40px; width: 100%;">Send Message</button> <!-- Adjusted height -->
+            </form>
+        </div>
+    </div>
+
+
+<!-- footer -->
+
+    <!-- <footer style="padding: 30px; background-color: rgb(3, 3, 24);margin-top: 30px;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; background-color: transparent;">
+            <div class="about-us" style="flex: 1; color: white; padding: 0; margin-right: 50px; background-color: transparent;">
+                <h5 style="font-weight: bold;">About Us</h5>
+                <p style="font-weight: bold;">We pride ourselves on delivering premium IT solutions that are customized to fit your business perfectly</p>
+
+            </div>
+            <div class="contact-us" style="text-align: center; color: white; padding: 0; background-color: transparent;">
+                <h5 style="font-weight: bold;">Contact Us</h5>
+                <p style="font-weight: bold;">Email: designsolution090@gmail.com</p>
+                <p style="font-weight: bold;">Phone:03701249537</p>
+                <p style="font-weight: bold; margin-top: 10px; background-color: transparent;">© 2024 Graphics Studio. All rights reserved.</p>
+            </div>
+            
+            <div class="social-icons" style="text-align: right; color: white; padding: 0; background-color: transparent;">
+                <h5 style="font-weight: bold;">Follow Us</h5>
+                <a href="https://www.facebook.com/profile.php?id=61560877334387" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                
+                <a href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="text-white">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                
+            </div>
+             
+        </div>
+
+        <div class="background">
+            <!-- WhatsApp Icon -->
+            <!-- <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank"> <!-- Update the number here -->
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+            </a>  -->
+        <!-- </div> 
+        </footer>  -->
+    
+
+
+
+        <footer class="footer" style="margin-top: 50px;">
+            <div class="container2"> 
+               <div class="row footer-content">
+                   <div class="col-md-3 about-us">
+                       <h5>About Us</h5>
+                       <p>We pride ourselves on delivering premium IT solutions.</p>
+                   </div>
+                   <div class="col-md-3 contact-us">
+                       <h5>Contact Us</h5>
+                       <p>Email: designsolution090@gmail.com</p>
+                       <p>Phone: 03701249537</p>
+                   </div>
+                   <div class="col-md-3 social-icons">
+                       <h5>Follow Us</h5>
+                       <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
+                       <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
+                   </div>
+                   <div class="col-md-3 address">
+                       <h5>Address</h5>
+                       <p>3/5 1j Muslim League Quarter</p>
+                       <p>Nazimabad No.1 Karachi</p>
+                   </div>
+               </div>
+               <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
+           </div>
+           <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+           </a> 
+        </footer>
+    
+
+<!-- Footer Section End -->
+       
+
+        
+    <!-- Your content here -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script >
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Basic form validation
+    if (!name || !phone || !email || !message) {
+        alert('Please fill out all fields.');
+        return; // Stop form submission if any field is empty
+    }
+
+    // Phone number validation (only numbers and proper length)
+    const phonePattern = /^[0-9]{10,11}$/; // Adjust the pattern based on your phone number format
+    if (!phonePattern.test(phone)) {
+        alert('Please enter a valid phone number.');
+        return;
+    }
+
+    // Email validation (more strict pattern)
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // Create the WhatsApp message link with bold text
+    const whatsappMessage = `*Hey there*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email}%0A*Message:* ${message}`;
+    const whatsappLink = `https://wa.me/923701249537?text=${whatsappMessage}`; // Message will be sent to +92 370 1249537
+
+    // Open WhatsApp
+    window.open(whatsappLink, '_blank');
+});
+
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites Development</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+/* Footer ke styles */
+
+html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .containere2 {
+            width: 100%;  
+            max-width: none; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+            padding-bottom: 60px; /* Footer ki height se space */
+        }
+
+        .footer {
+            background-color: rgb(3, 3, 24);
+            color: #fff; 
+            padding: 20px;  
+            margin: 0;
+            width: 100%; 
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Zameen ke saath chipkana */
+            left: 0; 
+            right: 0; 
+        }
+
+        .footer-content {
+            display: flex;  
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+
+        .copyright {
+            text-align: center; 
+            margin-top: 20px; 
+            width: 100%; 
+        }
+
+
+
+.whatsapp-float {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 1000;
+  
+ }
+
+ .whatsapp-icon {
+   width: 50px;
+   height: 50px;
+   margin-left: 1200px;
+
+ }
+
+
+ /* Card Styles */
+
+ .card {
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light black border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 4px; /* Optional: Rounded corners */
+
+}
+
+.card:hover {
+    transform: translateY(-15px); /* Moves the card slightly upwards on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.card-img-top {
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+     color: black;  /*Primary color */
+} 
+
+.card-text {
+    font-size: 1rem;
+    color: #555; /* Adjust text color as needed */
+}
+
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+</style>
+</head>
+<body>
+    
+<!-- nanbar -->
+
+<div class="navbar-hero">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="black logo.png" alt="Logo" width="70" height="70" class="rounded-logo me-2">
+                <div>
+                    <span class="business-name" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 40px;">D.G Solution's</span>
+                </div>
+            </a>
+            <button style="background-color: aliceblue;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="about.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="testimonal.html#Testimonial">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="Graphic.html" id="graphic-designing"><i class="fas fa-paint-brush"></i> Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="video2.html"><i class="fas fa-video"></i> Video Editing</a></li>
+                            <li><a class="dropdown-item" href="digital.html"><i class="fas fa-bullhorn"></i> Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="softwere2.html"><i class="fas fa-laptop-code"></i> Software Development</a></li>
+                            <li><a class="dropdown-item" href="application.html"><i class="fas fa-code"></i> Application Development</a></li>
+                            <li><a class="dropdown-item" href="website.html"><i class="fas fa-globe"></i> Website Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="font-weight: bold; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                        <a class="nav-link" href="contact.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+ <!-- Main Content -->
+ 
+
+  <h1 style="margin-top: 50px; font-weight: bold; color: black; display: flex; justify-content: center;">Websites Development</h1>
+<p style="display: flex; justify-content: center;">Elevate your online presence with our professional website development services.</p>
+
+<div class="container"> <!-- Fixed from 'di' to 'div' -->
+    <di class="row">
+        <!-- Card 1 -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Bussiness Website</h5>
+                    <p class="card-text">Welcome to our Business Website development service.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Card 1 -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel8">Bussiness Website</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Welcome to our Business Website development service, where innovation meets functionality. We specialize in crafting dynamic, user-friendly websites that not only elevate your online presence but also drive business growth.</p>
+<h6><strong>Key Features</strong></h6>
+<ul>
+    <li>Customization</li>
+    <li>Responsive Design</li>
+    <li>E-commerce Integration</li>
+    <li>Content Management System (CMS)</li>
+    <li>Social Media Integration</li>
+</ul>
+<p>Our website development service offers enhanced online presence, boosting brand credibility, expanding reach locally and globally, and optimizing conversions. With scalable solutions and ongoing technical support, we ensure your website stays functional and aligned with your business goals.</p>
+<p>Revitalize your brand online. Connect with us for expert Business Website development.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+<!-- Card 2 -->
+<div class="col-md-3 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">E-commerce Website </h5>
+            <p class="card-text">Empower your online business with our E-commerce solutions. </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2"> Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Card 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel8">E-commerce Website </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Unlock the potential of your online business with our E-commerce Website development services. We specialize in creating tailored solutions that seamlessly blend innovation and functionality, ensuring your digital storefront stands out in the ever-evolving online landscape.</p>
+<h6><strong>Key Features</strong></h6>
+<ul>
+    <li>Mobile Optimized Design</li>
+    <li>Product Showcase</li>
+    <li>Secure Shopping Cart</li>
+    <li>Inventory Management</li>
+    <li>Order Tracking</li>
+</ul>
+<p>Elevate your brand credibility and boost sales with our E-commerce Website development services. We prioritize user satisfaction, ensuring your online platform not only meets but exceeds customer expectations. Our solutions provide a cost-effective and time-efficient way to establish and grow your online presence. From increased sales to enhanced brand reputation, C World is your partner in achieving digital success.</p>
+<p>Ready to transform your E-commerce vision into a reality? Contact us to get started.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Card 3 -->
+<div class="col-md-3 mb-4">
+    <div class="card">
+        <!-- <img src="image3.jpg" class="card-img-top" alt="School Management Software"> -->
+        <div class="card-body">
+            <h5 class="card-title">Educational Website </h5>
+            <p class="card-text">Unlocking Educational Excellence in the Digital Era.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                Read More
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Card 3 -->
+
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel8">Educational Website </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <p>Unlocking educational excellence in the digital era. Empower your educational institution with our comprehensive website development services, designed to enhance the learning experience and foster academic growth.</p>
+    <h6><strong>Key Features</strong></h6>
+    <ul>
+        <li>Learning Management System (LMS)</li>
+        <li>Updates/News Alerts</li>
+        <li>Virtual Classrooms</li>
+        <li>Discussion Forums</li>
+        <li>Resource Libraries</li>
+    </ul>
+    <p>Our Educational Website development ensures tailored learning experiences, 24/7 access to resources for self-paced learning, and seamless collaboration tools for educators. Dedicated Parent-Teacher Portals enhance communication and transparency, while secure blockchain credentials validate academic achievements. Virtual laboratories offer dynamic, practical exploration in a digital environment.</p>
+    <p>Contact us today to embark on a transformative journey towards digital education excellence.</p>
+     
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="col-md-3 mb-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">  Real Estate Website</h5>
+            <p class="card-text">We create tailored online platforms with seamless design. </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                Read More
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Card 4 -->
+
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel8">Real Estate Website</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <p>Explore the next level of real estate possibilities with our website development services. We create tailored online platforms, marrying innovation with seamless design. Your brand takes center stage, supported by a commitment to excellence. Step into a digital realm where your real estate venture thrives. Welcome to a new era of success with our Real Estate Website development services.</p>
+<h6><strong>Key Features</strong></h6>
+<ul>
+    <li>Property Listings</li>
+    <li>Interactive Maps</li>
+    <li>Contact Forms</li>
+    <li>Virtual Tours</li>
+    <li>Payment Plans</li>
+</ul>
+<p>Our Real Estate Website development service caters to users by providing efficient property searches, engaging experiences, and mobile accessibility. For business owners, it ensures streamlined property management, increased online presence, scalability, and improved search engine rankings, fostering growth and success in the competitive real estate market.</p>
+<p>Join us for a future where your real estate venture thrives in the digital realm. Choose innovation, choose success—choose us.</p>
+
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <a href="https://wa.me/923701249537" class="btn btn-success" target="_blank">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- footer -->
+ <!-- <footer class="footer">
+    <div class="containere"> 
+       <div class="footer-content">
+           <div class="about-us">
+               <h5>About Us</h5>
+               <p>We pride ourselves on delivering premium IT solutions </p>
+           </div>
+           <div class="contact-us">
+               <h5>Contact Us</h5>
+               <p>Email: designsolution090@gmail.com</p>
+               <p>Phone: 03701249537</p>
+           </div>
+           <div class="social-icons">
+               <h5>Follow Us</h5>
+               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
+                   <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
+           </div>
+           <div class="address">
+               <h5>Address</h5>
+               <p>3/5 1j Muslim League Quarter</p>
+               <p>Nazimabad No.1 Karachi</p>
+           </div>
+       </div>
+       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
+   </div>
+    <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+  </a> 
+</footer>  -->
+
+<footer class="footer">
+    <div class="container2"> 
+       <div class="row footer-content">
+           <div class="col-md-3 about-us">
+               <h5>About Us</h5>
+               <p>We pride ourselves on delivering premium IT solutions.</p>
+           </div>
+           <div class="col-md-3 contact-us">
+               <h5>Contact Us</h5>
+               <p>Email: designsolution090@gmail.com</p>
+               <p>Phone: 03701249537</p>
+           </div>
+           <div class="col-md-3 social-icons">
+               <h5>Follow Us</h5>
+               <a style="color: white;" href="https://www.facebook.com/profile.php?id=61560877334387" class="icon-link"><i class="bi bi-facebook"></i></a>
+               <a style="color: white;" href="https://www.instagram.com/invites/contact/?i=1o115jogwgrqm&utm_content=vbanalv" class="icon-link"><i class="bi bi-instagram"></i></a>
+           </div>
+           <div class="col-md-3 address">
+               <h5>Address</h5>
+               <p>3/5 1j Muslim League Quarter</p>
+               <p>Nazimabad No.1 Karachi</p>
+           </div>
+       </div>
+       <p class="copyright">© 2024 Graphics Studio. All rights reserved.</p>
+   </div>
+   <a href="https://wa.me/923701249537" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+   </a> 
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

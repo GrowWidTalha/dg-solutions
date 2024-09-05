@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .navbar-hero {
+    min-height: 100vh;
+    width: 100%;
+    
+}  */
+
+/* Navbar Styles */
+/* .navbar {
+    background-color: transparent;
+    padding: 1rem;
+    
+} */
+
+/* .navbar-brand img {
+    max-width: 70px;
+    height: auto;
+} */
+
+/* .business-name,
+.phone-number {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  
+} */
+
+/* .navbar-nav {
+    font-size: 1.1rem;
+} */
+
+/* .nav-link { */
+    /* color: white !important; */
+    /* color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    
+} */
+
+/* .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+} 
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+} */
+
+/* im */
+
+/* Card Styles */
+.card {
+    border: none; /* Removes default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+} 
+
+
+.card:hover {
+    transform: translateY(-15px); /* Moves the card slightly upwards on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.card-img-top {
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+     color: #007bff;  /*Primary color */
+} 
+
+.card-text {
+    font-size: 1rem;
+    color: #555; /* Adjust text color as needed */
+}
+
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Responsive Design */
+/* @media (max-width: 767.98px) {
+    .card-img-top {
+        height: 150px;  */
+        /* Adjust image height for smaller screens */
+    /* }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+} */
+
+
+
+ /* .footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+} 
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #0056b3;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 25px 8px rgba(7, 7, 199, 0.9);
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+
+
+
+/* Container Styles */
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #333; /* Adjust color as needed */
+/* }  */
+
+
+/* Footer ke styles */
+.footer {
+    
+     /* Apne desired background color ko yahan daalo */
+    background-color: rgb(3, 3, 24);
+    color: #fff; /* Text color */
+    padding: 20px ; /* Footer ke liye vertical padding */
+    margin: 0;
+    width: 100%; /* Full width */
+}
+
+
+/* Container ke styles */
+.container {
+    width: 100%; /* Full width tak footer background ko le jaana */
+    max-width: none; /* Content ke liye max width */
+    margin: 0 auto; /* Container ko center karo */
+    padding: 0 20px; /* Inner spacing ke liye padding */
+}
+
+
+
+/* Footer content ke styles */
+.footer-content {
+    display: flex;  /* Horizontal alignment ke liye flexbox use karo */
+    justify-content: space-between; /* Items ko space do */
+    align-items: flex-start; /* Items ko start se align karo */
+}
+
+/* Copyright ke styles */
+.copyright {
+    text-align: center; /* Copyright text ko center align karo */
+    margin-top: 20px; /* Copyright ke upar space do */
+    width: 100%; /* Copyright ke liye full width */
+}
+
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+   
+  }
+
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 1200px;
+  }
